@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/errorView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/ivSad"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvError"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_sad_smiley"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:fontFamily="@font/abeezee"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRetry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/action_retry"
+        android:fontFamily="@font/abeezee"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textColorLink="@android:color/holo_blue_dark"
+        app:layout_constraintEnd_toEndOf="@+id/tvError"
+        app:layout_constraintStart_toStartOf="@+id/tvError"
+        app:layout_constraintTop_toBottomOf="@+id/tvError" />
+</androidx.constraintlayout.widget.ConstraintLayout>

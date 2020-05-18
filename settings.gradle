@@ -1,0 +1,2 @@
+rootProject.name='NewsOn'
+include ':app'

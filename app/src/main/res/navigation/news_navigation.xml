@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/news_navigation"
+    app:startDestination="@id/newsFragment">
+
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.katariya.newson.view.list.NewsFragment"
+        android:label="NewsFragment" >
+        <action
+            android:id="@+id/action_newsFragment_to_newsDetailsFragment"
+            app:destination="@id/newsDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsDetailsFragment"
+        android:name="com.katariya.newson.view.details.NewsDetailsFragment"
+        android:label="NewsDetailsFragment" >
+        <argument
+            android:name="sourceUrl"
+            app:argType="string" />
+    </fragment>
+</navigation>
